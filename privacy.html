@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy policy for Moneypenny Artifact Pilot</title>
+<style>body{font:18px/1.55 system-ui,sans-serif;max-width:43rem;margin:3rem auto;padding:0 1rem;color:#20252a}h1,h2{line-height:1.2}h2{font-size:1.25rem;margin-top:2rem}nav{margin-top:2rem}a{color:#155188}</style>
+<main><h1>Privacy policy for Moneypenny Artifact Pilot</h1>
+<p>The operator uses this personal integration to save generated reports to a designated Google Drive folder and verify delivery. This policy covers the artifact service and its Google Drive authorization.</p>
+<h2>Data accessed and how it is used</h2>
+<p>The service reads the authorized account’s email address to check that the operator selected the intended account. Google grants read-only access to Drive metadata across that account. The service requests metadata for the configured folder and its children, including filenames, object IDs, parent IDs, creation times and available file sizes. It uses per-file access to create generated logs, audit reports and dashboards, and to download those files to verify their bytes. These reports can contain information derived from the operator’s inbox.</p>
+<h2>Processing and storage</h2>
+<p>The operator’s Claude cloud routine sends a generated file and its verification information over HTTPS to the Home service. Anthropic’s environment proxy supplies the service credential. Tailscale provides the HTTPS route. Google hosts the files in the operator’s Drive. The service processes the submitted files using temporary local storage and returns a receipt to the routine. Its local journal retains operation IDs, file metadata, content hashes, verification status and receipts so interrupted operations can be investigated. Windows user protection secures the stored Google refresh credential.</p>
+<p>Drive access serves publication, verification and recovery. The operator does not sell Google user data, use it for advertising or use it to train a general-purpose AI model. Use and transfer of information received from Google APIs follow the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+<h2>Retention and control</h2>
+<p>Generated artifacts remain in the operator’s Drive until the operator removes them. The local journal is retained for duplicate prevention and recovery. Revoking access in the <a href="https://myaccount.google.com/connections">Google Account connections page</a> stops future authorized access once the revocation takes effect. Existing files and journal records can be addressed separately by contacting the operator at the support address displayed on the consent screen.</p>
+<nav><a href="index.html">About the app</a> · <a href="terms.html">Terms of service</a></nav>
+</main></html>
